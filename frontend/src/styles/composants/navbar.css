@@ -1,0 +1,132 @@
+header {
+    margin: 69px 69px 50px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 100%;
+}
+
+header nav .logo {
+    margin-right: 3%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+header nav ul li {
+    text-align: center;
+    background-color: black;
+    padding: 5px 20px 7px 20px;
+}
+
+header nav ul li:hover {
+
+    text-align: center;
+    background-color: transparent;
+    padding: 5px 20px 7px 20px;
+    color: #000;
+    transition: 0.3s all;
+    cursor: pointer;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+header nav ul li a {
+
+    font-family: 'Inria Serif', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+header nav ul li:hover a {
+    color: #000;
+    transition: 0.3s all;
+}
+
+@media screen and (min-width:2101px) {
+    header {
+        margin: 100px
+    }
+
+    header nav ul {
+        width: 30%;
+        padding-left: 0
+    }
+}
+
+@media screen and (min-width:1901px) and (max-width:2100px) {
+    header {
+        margin: 100px
+    }
+
+    header nav ul {
+        width: 35%;
+        padding-left: 0
+    }
+}
+
+@media screen and (min-width:1701px) and (max-width:1900px) {
+    header {
+        margin: 80px
+    }
+
+    header nav ul {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:1700px) {
+    header nav ul {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:665px) {
+
+    header {
+        margin: 40px 0px;
+
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    header nav .logo {
+        width: 40%;
+        display: flex;
+        margin-right: 0;
+    }
+
+    header nav .logo a {
+        margin: auto;
+    }
+
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+}
