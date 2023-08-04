@@ -1,9 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from './composants/Navbar';
+import Home from "./pages/Home";
+import Workmore from "./pages/Workmore";
+import './styles/App.css';
 
 function App() {
   return (
-    <div><img src={logo} alt="" /></div>
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={'#aboutme'} />
+        <Route path="/project" element={'#project'} />
+        <Route path="/work" element={'#work'} />
+        <Route path="/work/:id" element={<Workmore />} />
+      </Routes>
+
+    </div>
   );
 }
 
