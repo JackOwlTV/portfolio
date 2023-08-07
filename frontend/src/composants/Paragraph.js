@@ -8,13 +8,16 @@ export default function Paragraph(props) {
 
     return (
         <div className='paragraphe-comp'>
-            <p className='paragraphe'>
-                {props.Paragraph}
-            </p>
-            <NavLink to={props.link}>
-                <button className='button-paragraphe'>
+            <div className="text">
+                    <p id='paragraphe'>
+                    {props.Paragraph}
+                </p>
+            </div>
+
+            <NavLink to={props.link} id='button'>
+                <a className='button-paragraphe'>
                     {props.button}
-                </button>
+                </a>
             </NavLink>
 
         </div>

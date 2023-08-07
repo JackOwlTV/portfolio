@@ -1,5 +1,6 @@
 header {
-    margin: 69px 69px 50px;
+    margin: 69px 69px;
+    margin-bottom: 9.5rem;
 }
 
 header nav {
@@ -20,21 +21,24 @@ header nav ul {
     display: flex;
     list-style: none;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     width: 50%;
 }
 
 header nav ul li {
+    width: 7.0625rem;
+    height: 2.375rem;
+    flex-shrink: 0;
     text-align: center;
+    padding-top: 0.7rem;
     background-color: black;
-    padding: 5px 20px 7px 20px;
 }
 
 header nav ul li:hover {
 
     text-align: center;
     background-color: transparent;
-    padding: 5px 20px 7px 20px;
     color: #000;
     transition: 0.3s all;
     cursor: pointer;
@@ -47,10 +51,12 @@ header nav ul li a {
 
 header nav ul li a {
 
-    font-family: 'Inria Serif', serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
+    color: #FEFEFE;
+    font-family: Inria Serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 header nav ul li:hover a {
