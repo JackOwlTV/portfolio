@@ -1,7 +1,8 @@
 import React from 'react'
+import Paragraph from '../composants/Paragraph'
 
 export default function Home() {
     return (
-        <div></div>
+        <Paragraph Paragraph={"Test"} link={"/"} button={"test"} />
     )
 }
