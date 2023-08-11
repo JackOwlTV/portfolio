@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './composants/Navbar';
 import Home from "./pages/Home";
-import About from "./pages/School";
+import Project from "./pages/Project";
+import School from "./pages/School";
+import Work from "./pages/Work";
 import Workmore from "./pages/Workmore";
 import './styles/App.css';
 
@@ -11,9 +13,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project" element={'#project'} />
-        <Route path="/school" element={<About />} />
-        <Route path="/work" element={'#work'} />
+        <Route path="/project" element={<Project/>} />
+        <Route path="/school" element={<School />} />
+        <Route path="/work" element={<Work/>} />
         <Route path="/work/:id" element={<Workmore />} />
       </Routes>
 
