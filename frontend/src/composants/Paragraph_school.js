@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/composants/paragraph.css'
+import '../styles/composants/paragraph_school.css'
 import { NavLink } from 'react-router-dom'
 
-export default function Paragraph(props) {
+export default function Paragraph_school(props) {
 
 
 
@@ -15,7 +15,7 @@ export default function Paragraph(props) {
             </div>
 
             <NavLink to={props.link} id='button'>
-                <a href={props.link} className='button-paragraphe'>
+                <a href={props.link} className='button_paragraphe'>
                     {props.button}
                 </a>
             </NavLink>

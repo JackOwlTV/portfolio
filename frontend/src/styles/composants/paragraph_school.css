@@ -13,7 +13,7 @@ div text {
     width: 44.125rem;
     height: 14.25rem;
     flex-shrink: 0;
-    
+
 }
 
 #paragraphe {
@@ -34,7 +34,7 @@ div text {
 
 }
 
-div .button-paragraphe {
+div .button_paragraphe {
 
     /* Button background */
 
@@ -54,15 +54,12 @@ div .button-paragraphe {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    margin-right: 26rem;
 
 }
 
-div .button-paragraphe:hover {
+div .button_paragraphe:hover {
     border-bottom: none;
-
-    background-color: transparent;
-
-    color: #000;
-
+    background-color: #7451eb;
     transition: 0.3s all;
 }
