@@ -16,9 +16,9 @@ export default function Navbar() {
                     </NavLink>
                 </div>
                 <ul>
-                    <li className={location.pathname === '/aboutme' ? "li-active" : ""}>
+                    <li className={location.pathname === '/' ? "li-active" : ""}>
                         <NavLink
-                            to={'/aboutme'}
+                            to={'/'}
                             className={(nav) => (nav.isActive ? "nav-active" : "")}
                         >
                             _aboutme
