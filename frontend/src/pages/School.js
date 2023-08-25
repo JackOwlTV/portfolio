@@ -8,7 +8,7 @@ export default function School() {
         <section className="about">
 
             <div className="title">
-                <NavLink to={"https://openclassrooms.com/fr/"}>              
+                <NavLink to={"https://openclassrooms.com/fr/"}>
                     <h2>OPENCLASSROOMS</h2>
                 </NavLink>
                 <h3>Développeur Web</h3>

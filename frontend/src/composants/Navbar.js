@@ -40,7 +40,7 @@ export default function Navbar() {
                             _school
                         </NavLink>
                     </li>
-                    <li className={location.pathname === '/work' ? "li-active" : ""}>
+                    <li className={location.pathname.substring(0, 5) == '/work' ? "li-active" : ""}>
                         <NavLink
                             to={'/work'}
                             className={(nav) => (nav.isActive ? "nav-active" : "")}

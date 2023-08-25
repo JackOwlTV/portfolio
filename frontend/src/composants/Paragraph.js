@@ -15,9 +15,9 @@ export default function Paragraph(props) {
             </div>
 
             <NavLink to={props.link} id='button'>
-                <a href={props.link} className='button-paragraphe'>
+                <div className='button-paragraphe'>
                     {props.button}
-                </a>
+                </div>
             </NavLink>
 
         </div>

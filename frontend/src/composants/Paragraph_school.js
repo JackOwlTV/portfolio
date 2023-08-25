@@ -15,9 +15,9 @@ export default function Paragraph_school(props) {
             </div>
 
             <NavLink to={props.link} id='button'>
-                <a href={props.link} className='button_paragraphe'>
+                <div href={props.link} className='button_paragraphe'>
                     {props.button}
-                </a>
+                </div>
             </NavLink>
 
         </div>

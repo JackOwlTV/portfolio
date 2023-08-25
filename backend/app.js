@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require("cors");
+const path = require("path");
+
 const mongoose = require('mongoose');
 
 const Project = require('./models/Project');
@@ -8,13 +10,16 @@ require("dotenv").config();
 const URI = process.env.URI;
 
 const app = express();
+const projectRoutes = require("./routes/project");
+const userRoutes = require("./routes/user");
 
 app.use(express.json());
 
 // Connexion a MongoDB
-mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Connexion à MongoDB réussie !'))
-    .catch(() => console.log('Connexion à MongoDB échouée !'));
+mongoose
+    .connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log("Connexion à MongoDB réussie !"))
+    .catch((error) => console.log({ message: error }));
 
 
 // Activer CORS pour toutes les routes
@@ -26,28 +31,19 @@ app.use(cors({
     credentials: true
 }));
 
-app.post('/api/project', (req, res, next) => {
-    delete req.body._id
-    const project = new Project({
-        ...req.body
-    })
-    project.save()
-        .then(() => res.status(201).json({ message: 'Objet enregistré !' }))
-        .catch((error => res.status(400).json({ error: error })));
-})
+// Ajoute un middleware pour analyser ces données et les rendre disponibles dans req.body
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/api/project', (req, res, next) => {
-    const project = [
-        {
-            _id: 'azdazd',
-            title: 'Projet Bookie',
-            description: 'Projet Openclassroom...',
-            imageUrl: '',
-            link: '',
-            githublink: '',
-        }
-    ];
-    res.status(300).json(project);
-});
+// Ajoute un middleware pour traiter les requêtes entrantes au format JSON
+app.use(express.json());
+
+// Définit une route pour gérer les requêtes liées aux projets de l'API
+app.use("/api/projects", projectRoutes);
+
+// Définit une route pour gérer les requêtes d'authentification de l'API
+app.use("/api/auth", userRoutes);
+
+// Définit un middleware pour servir les fichiers statiques du répertoire "images" à partir de l'URL "/images"
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 module.exports = app;
