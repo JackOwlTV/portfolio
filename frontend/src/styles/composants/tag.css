@@ -1,0 +1,22 @@
+.tag {
+    background: black;
+    color: #fff;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inria Serif;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:740px) {
+
+    .tag {
+        font-size: 2.5vw;
+        width: 20vw;
+    }
+}

@@ -24,7 +24,7 @@ export default function Navbar() {
                             _aboutme
                         </NavLink>
                     </li>
-                    <li className={location.pathname === '/project' ? "li-active" : ""}>
+                    <li className={location.pathname.substring(0, 8) === '/project' ? "li-active" : ""}>
                         <NavLink
                             to={'/project'}
                             className={(nav) => (nav.isActive ? "nav-active" : "")}

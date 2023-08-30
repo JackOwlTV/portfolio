@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import { projectList } from '../utils/projectList'
-
+import '../styles/composants/gallery.css'
 
 export default function Gallery() {
     return (
