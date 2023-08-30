@@ -25,7 +25,7 @@ export const projectList = [
 
     {
         "id": "1",
-        "title": "Kasa Immobilier",
+        "title": "Test 2",
         "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
         "pictures": [
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
