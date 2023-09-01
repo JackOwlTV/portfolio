@@ -89,7 +89,7 @@ export default function Oneproject() {
             </div>
             <div className="description-zone">
                 <div className={descriptionActive ? 'description active' : 'description'} onClick={toggleDescription} >
-                    <span>Description</span>
+                    <span>_description</span>
                 </div>
                 <div className="tag-zone">
                     {project.tags.map((e, index) => (

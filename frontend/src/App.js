@@ -7,6 +7,7 @@ import Oneproject from './pages/Oneproject';
 import School from "./pages/School";
 import Work from "./pages/Work";
 import Workmore from "./pages/Workmore";
+import Footer from './composants/Footer';
 import './styles/App.css';
 
 function App() {
@@ -17,13 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/project/:id" element={<Oneproject />}/>
+        <Route path="/project/:id" element={<Oneproject />} />
         <Route path="/school" element={<School />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/http" element={<Workmore />} />
 
       </Routes>
-
+      <Footer />
     </div>
   );
 }
