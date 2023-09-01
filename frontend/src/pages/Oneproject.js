@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Tag from '../composants/Tag'
 import Banner from '../composants/Banner'
-import Arrow from '../composants/Arrow'
 import Description from '../composants/Description'
+import '../styles/page/oneproject.css'
 import { projectList } from "../utils/projectList"
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+
+
 
 
 export default function Oneproject() {
@@ -13,21 +21,19 @@ export default function Oneproject() {
     const [activeBanner, setActiveBanner] = useState(0);
     const [descriptionActive, setDescriptionActive] = useState(0);
 
-    const previousBanner = () => {
-        if (activeBanner === 0) {
-            setActiveBanner(project.pictures.length - 1);
-        } else {
-            setActiveBanner(activeBanner - 1);
-        }
-    }
 
-    const nextBanner = () => {
-        if (activeBanner === project.pictures.length - 1) {
-            setActiveBanner(0);
-        } else {
-            setActiveBanner(activeBanner + 1);
-        }
-    }
+    useEffect(() => {
+        const interval = setInterval(() => {
+          // Calcul de l'indice de l'image suivante
+          const nextIndex = (activeBanner + 1) % project.pictures.length;
+          setActiveBanner(nextIndex);
+        }, 5000); // Change d'image toutes les 5 secondes (5000 millisecondes)
+    
+        return () => {
+          // Nettoie l'intervalle lorsque le composant est démonté
+          clearInterval(interval);
+        };
+      }, [activeBanner]);
 
     const toggleDescription = () => {
         setDescriptionActive(!descriptionActive);
@@ -36,24 +42,21 @@ export default function Oneproject() {
     return (
         <div>
             <div className="project-banner">
-                <div className="arrows-banner-zone">
-                    <Arrow
-                        onClick={previousBanner}
-                        className={
-                            project.pictures.length > 1
-                                ? "arrow-left fa-solid fa-chevron-up"
-                                : null
-                        }
-                    />
-                    <Arrow
-                        onClick={nextBanner}
-                        className={
-                            project.pictures.length > 1
-                                ? "arrow-right fa-solid fa-chevron-up"
-                                : null
-                        }
-                    />
+                <div className="link">
+                    <div className='icon-block'>
+                        <Link to={project.link.github} >
+                            <FontAwesomeIcon icon={faGithub} className='icon-link' />
+                        </Link>
+                    </div>
+
+                    <div className='icon-block'>
+                        <Link to={project.link.website}>
+                            <FontAwesomeIcon icon={faLink} className='icon-link' />
+                        </Link>
+                    </div>
+
                 </div>
+
                 {project.pictures.map((e, index) => (
                     <Banner
                         className={`img-banner ${index === activeBanner ? "active-banner" : ""}`}
@@ -69,7 +72,7 @@ export default function Oneproject() {
                 </span>
             </div>
             <div className="description-zone">
-                <div className="decription" onClick={toggleDescription} >
+                <div className={descriptionActive ? 'description active' : 'description'} onClick={toggleDescription} >
                     <span>Description</span>
                 </div>
                 <div className="tag-zone">
