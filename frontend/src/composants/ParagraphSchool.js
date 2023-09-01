@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/composants/paragraph_school.css'
 import { NavLink } from 'react-router-dom'
 
-export default function Paragraph_school(props) {
+export default function ParagraphSchool(props) {
 
 
 

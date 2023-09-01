@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef  } from 'react'
 import Tag from '../composants/Tag'
 import Banner from '../composants/Banner'
 import Description from '../composants/Description'
@@ -20,20 +20,36 @@ export default function Oneproject() {
     const project = projectList.find((project) => project.id === id);
     const [activeBanner, setActiveBanner] = useState(0);
     const [descriptionActive, setDescriptionActive] = useState(0);
+    const picturesLengthRef = useRef(project.pictures.length);
 
+
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //       // Calcul de l'indice de l'image suivante
+    //       const nextIndex = (activeBanner + 1) % project.pictures.length;
+    //       setActiveBanner(nextIndex);
+    //     }, 7000); // Change d'image toutes les 5 secondes (5000 millisecondes)
+
+    //     return () => {
+    //       // Nettoie l'intervalle lorsque le composant est démonté
+    //       clearInterval(interval);
+    //     };
+    //   }, [activeBanner]);
 
     useEffect(() => {
+        picturesLengthRef.current = project.pictures.length;
+      }, [project.pictures.length]);
+    
+      useEffect(() => {
         const interval = setInterval(() => {
-          // Calcul de l'indice de l'image suivante
-          const nextIndex = (activeBanner + 1) % project.pictures.length;
-          setActiveBanner(nextIndex);
-        }, 5000); // Change d'image toutes les 5 secondes (5000 millisecondes)
+          setActiveBanner((prevActiveBanner) => (prevActiveBanner + 1) % picturesLengthRef.current);
+        }, 7000);
     
         return () => {
-          // Nettoie l'intervalle lorsque le composant est démonté
           clearInterval(interval);
         };
-      }, [activeBanner]);
+      }, []);
 
     const toggleDescription = () => {
         setDescriptionActive(!descriptionActive);

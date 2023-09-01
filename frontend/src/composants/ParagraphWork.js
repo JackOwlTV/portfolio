@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/composants/paragraph_work.css'
 import { NavLink } from 'react-router-dom'
 
-export default function Paragraph_work(props) {
+export default function ParagraphWork(props) {
 
 
 

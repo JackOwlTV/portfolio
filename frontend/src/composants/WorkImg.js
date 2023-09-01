@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../styles/composants/work_img.css'
 
-export default function Work_img(props) {
+export default function WorkImg(props) {
     return (
         <section id='work'>
             <a href="https://httproject.fr/">
