@@ -3,7 +3,7 @@
     margin: auto;
     width: 75%;
     height: 450px;
-    transition: 0, 5s all;
+    transition: 0,5s all;
     position: relative;
     display: flex; 
     align-items: center; 
