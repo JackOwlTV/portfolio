@@ -1,0 +1,84 @@
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div p {
+    display: flex;
+    width: 44.125rem;
+    height: 14.25rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+div text {
+
+    width: 44.125rem;
+    height: 14.25rem;
+    flex-shrink: 0;
+
+}
+
+.dev {
+    margin-top: 1rem;
+    margin-bottom: 2.3rem;
+    color: #000;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#paragraphes {
+    color: #000;
+    text-align: justify;
+    font-family: Inria Serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#boutton {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 64rem;
+    text-decoration: none;
+
+}
+
+div .buttonparagraphe {
+
+    /* Button background */
+
+    width: 6.2rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    background-color: black;
+    border-bottom: none;
+    /* text */
+
+    color: #FEFEFE;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin-right: 26rem;
+
+}
+
+div .buttonparagraphe:hover {
+    border-bottom: none;
+    background-color: #4c707d;
+    transition: 0.3s all;
+}

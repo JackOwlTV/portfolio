@@ -1,0 +1,45 @@
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: unset;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	margin-right: 44rem;
+	text-align: center;
+}
+
+
+
+section div h2 {
+    margin: 0;
+    color: #7451eb;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section div h2:hover{
+    color: #473090;
+    transition: 0.3s all;
+    text-decoration: none;
+
+}
+
+section div h3 {
+    margin-top: 0;
+    margin-bottom: 4.3rem;
+    color: #000;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

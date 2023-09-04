@@ -1,0 +1,22 @@
+#work {
+    position: relative;
+    display: inline-block;
+}
+
+
+.Icon_more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 12px;
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+#work:hover .Icon_more {
+    display: block;
+    opacity: 1;
+}

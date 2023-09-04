@@ -1,0 +1,7 @@
+.gallery {
+    text-align: center;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1240px;
+}

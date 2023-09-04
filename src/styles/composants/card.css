@@ -1,0 +1,47 @@
+.card {
+    height: 340px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    transition: 0.5s all;
+    margin-bottom: 10%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s all;
+}
+
+.card .overlay {
+    position: absolute;
+    background-image: linear-gradient(to bottom, #ffffff00, #0000005c);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card span {
+    position: absolute;
+    text-align: left;
+    bottom: 13px;
+    left: 13px;
+    background: black;
+    color: #fff;
+    padding: 6px;
+    z-index: 2;
+    font-family: Inria Serif;
+    transition: 0.5s all;
+
+}
+
+.card:hover span {
+    transition: 0.5s all;
+    font-size: 22px;
+
+}
