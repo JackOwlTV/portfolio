@@ -9,7 +9,7 @@ export default function ParagraphSchool(props) {
     return (
         <div className='paragraphe-comp'>
             <div className="text">
-                <p className='paragraphe'>
+                <p id="school" className='paragraphe'>
                     {props.Paragraph}
                 </p>
             </div>

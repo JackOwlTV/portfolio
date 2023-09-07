@@ -10,12 +10,12 @@ export default function Home() {
 
             <div>
 
-                <img src={Images} alt="Illustration de Dylan" className='illustration'/>
+                <img src={Images} alt="Illustration de Dylan" className='illustration' />
 
             </div>
 
             <Paragraph
-                Paragraph={"Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus"}
+                Paragraph={"Bonjour, je suis Dylan, un passionné avant tout. Ma première passion, le graphisme, m'a conduit sur un chemin d'apprentissage autodidacte, principalement grâce à Internet, où YouTube est devenu mon meilleur ami. Aujourd'hui, je suis un développeur front-end junior, avide de défis et constamment avide d'apprendre.\n\nDepuis le début de mes études, je suis fier d'appeler Nantes ma maison, mais je suis tout aussi ouvert à de nouvelles aventures, peu importe où elles me mènent, même jusqu'à Mars. Mon parcours unique et ma soif de connaissances me permettent de créer des expériences web exceptionnelles. Explorez mon portfolio pour découvrir comment je combine ma passion pour le graphisme avec mes compétences en développement front-end pour donner vie à des projets exceptionnels.\n\nPrêt à collaborer sur de nouveaux projets passionnants ? N'hésitez pas à me contacter !"}
                 link={"https://www.linkedin.com/in/dylan-vivant/"}
                 button={"_linkedin"}
             />

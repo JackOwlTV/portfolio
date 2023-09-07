@@ -1,6 +1,6 @@
 export const projectList = [
     {
-        "id": "kasa",
+        "id": "kasaimmobilier",
         "title": "Kasa Immobilier",
         "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
         "pictures": [
@@ -24,8 +24,8 @@ export const projectList = [
     },
 
     {
-        "id": "bookie",
-        "title": "Test 2",
+        "id": "grimoire",
+        "title": "Mon Vieux Grimoire",
         "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
         "pictures": [
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -36,16 +36,17 @@ export const projectList = [
         ],
         "description": "Description de test",
         "link": {
-            "github": "https://github.com/JackOwlTV/Kasa-Immobilier",
-            "website": "https://kasaimmobilier.netlify.app/"
+            "github": "https://github.com/JackOwlTV/P7-Dev-Web-livres",
+            "website": "monvieugrimoire.fr.nf"
         },
         "tags": [
-            "HTML",
-            "CSS",
-            "React"
+            "_node.js",
+            "_express"
         ]
 
     },
+
+
     {
         "id": "domainebard",
         "title": "Domaine Bard",
@@ -62,16 +63,15 @@ export const projectList = [
             "website": "https://domainebard.com/"
         },
         "tags": [
-            "HTML",
-            "CSS",
-            "React"
+            "_wordpress",
+            "_divi"
         ]
 
     },
 
     {
-        "id": "grimoire",
-        "title": "Test 4",
+        "id": "sophiebluel",
+        "title": "Sophie Bluel",
         "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
         "pictures": [
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -82,13 +82,13 @@ export const projectList = [
         ],
         "description": "Description de test",
         "link": {
-            "github": "https://github.com/JackOwlTV/Kasa-Immobilier",
-            "website": "https://kasaimmobilier.netlify.app/"
+            "github": "https://github.com/JackOwlTV/projet-3",
+            "website": "sophiebluel.fr.nf"
         },
         "tags": [
-            "HTML",
-            "CSS",
-            "React"
+            "_html",
+            "_css",
+            "_javascript"
         ]
 
     },

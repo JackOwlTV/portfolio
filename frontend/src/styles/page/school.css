@@ -1,17 +1,19 @@
 .about {
-	display: flex;
-	flex-direction: column;
-	align-items: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
 }
 
 .title {
-	display: flex;
-	flex-direction: column;
-	margin-right: 44rem;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 44rem;
+    text-align: center;
 }
 
-
+.school{
+    margin-right: 0;
+}
 
 section div h2 {
     margin: 0;
@@ -25,7 +27,7 @@ section div h2 {
     text-decoration: none;
 }
 
-section div h2:hover{
+section div h2:hover {
     color: #473090;
     transition: 0.3s all;
     text-decoration: none;
@@ -44,8 +46,8 @@ section div h3 {
     line-height: normal;
 }
 
-@media (max-width: 768px){
-    .title{
+@media (max-width: 1110px) {
+    .title {
         margin-right: 0;
     }
 }

@@ -8,7 +8,6 @@
 div p {
     display: flex;
     width: 44.125rem;
-    height: 14.25rem;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -35,17 +34,6 @@ div text {
     line-height: normal;
 }
 
-#paragraphe {
-    color: #000;
-    text-align: justify;
-    font-family: Inria Serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 50vw;
-    height: 40vh;
-}
 
 #boutton {
 
@@ -84,7 +72,7 @@ div .buttonparagraphe:hover {
     transition: 0.3s all;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     #paragraphe {
         font-size: 1rem;
         width: 88vw;

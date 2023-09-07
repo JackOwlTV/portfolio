@@ -1,26 +1,23 @@
 div p {
     display: flex;
     width: 44.125rem;
-    height: 14.25rem;
+    /* height: 14.25rem; */
     justify-content: center;
     align-items: center;
     margin: auto;
 
 }
 
-div text {
 
-    width: 44.125rem;
-    height: 14.25rem;
-    flex-shrink: 0;
-
+#school {
+    width: 70rem;
 }
 
 .paragraphe {
     color: #000;
     text-align: justify;
     font-family: Inria Serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -63,11 +60,14 @@ div .button_paragraphe:hover {
     transition: 0.3s all;
 }
 
-@media (max-width: 768px) {
-    .paragraphe {
+@media (max-width: 820px) {
+    .paragraphe,
+    #school{
         font-size: 1rem;
         width: 88vw;
-        height: 37vh;
+
     }
+
+ 
 
 }
