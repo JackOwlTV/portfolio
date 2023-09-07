@@ -4,13 +4,21 @@ import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+import Footer from './composants/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const footer = ReactDOM.createRoot(document.getElementById('footer')); 
+
 root.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
 );
+
+footer.render(
+  <Footer/>
+)
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

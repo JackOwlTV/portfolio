@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-
+import '../styles/composants/tag.css'
 
 
 
@@ -88,7 +88,7 @@ export default function Oneproject() {
                 </span>
             </div>
             <div className="description-zone">
-                <div className={descriptionActive ? 'description active' : 'description'} onClick={toggleDescription} >
+                <div className={descriptionActive ? 'tag description active' : 'tag description'} onClick={toggleDescription} >
                     <span>_description</span>
                 </div>
                 <div className="tag-zone">

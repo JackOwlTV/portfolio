@@ -35,20 +35,22 @@ div text {
     line-height: normal;
 }
 
-#paragraphes {
+#paragraphe {
     color: #000;
     text-align: justify;
     font-family: Inria Serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 50vw;
+    height: 40vh;
 }
 
 #boutton {
+
     display: flex;
-    justify-content: flex-start;
-    margin-left: 64rem;
+    justify-content: flex-end;
     text-decoration: none;
 
 }
@@ -73,7 +75,6 @@ div .buttonparagraphe {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
-    margin-right: 26rem;
 
 }
 
@@ -81,4 +82,13 @@ div .buttonparagraphe:hover {
     border-bottom: none;
     background-color: #4c707d;
     transition: 0.3s all;
+}
+
+@media (max-width: 768px) {
+    #paragraphe {
+        font-size: 1rem;
+        width: 88vw;
+        height: 60vh;
+    }
+
 }

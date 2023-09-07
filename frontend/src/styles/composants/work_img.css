@@ -3,6 +3,9 @@
     display: inline-block;
 }
 
+.Mobile {
+    display: none;
+}
 
 .Icon_more {
     position: absolute;
@@ -11,12 +14,28 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 12px;
-    display: none;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.5s ease;
+    z-index: 1;
 }
 
 #work:hover .Icon_more {
-    display: block;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    .Image {
+        display: none;
+    }
+
+    .Icon_more {
+        opacity: 1;
+
+    }
+
+    .Mobile {
+        display: block;
+        width: 85vw;
+    }
 }

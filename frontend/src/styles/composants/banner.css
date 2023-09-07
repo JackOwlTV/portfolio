@@ -3,10 +3,9 @@
     margin: auto;
     width: 75%;
     height: 450px;
-    transition: 0,5s all;
     position: relative;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .project-banner:hover {
@@ -39,4 +38,13 @@
     bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 1243px) {
+    .project-banner {
+        height: 30vh;
+        width: 85vw;
+        margin: auto;
+    }
+
 }

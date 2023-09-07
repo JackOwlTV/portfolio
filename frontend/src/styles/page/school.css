@@ -43,3 +43,9 @@ section div h3 {
     font-weight: 700;
     line-height: normal;
 }
+
+@media (max-width: 768px){
+    .title{
+        margin-right: 0;
+    }
+}

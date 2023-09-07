@@ -45,3 +45,14 @@
     font-size: 22px;
 
 }
+
+@media (max-width: 1243px) {
+    .card {
+        height: 35vh;
+        width: 80%;
+        /* margin: auto; */
+        position: relative;
+        transition: 0.5s all;
+        /* margin-bottom: 10%; */
+    }
+}

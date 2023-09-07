@@ -16,7 +16,7 @@ div text {
 
 }
 
-#paragraphe {
+.paragraphe {
     color: #000;
     text-align: justify;
     font-family: Inria Serif;
@@ -54,7 +54,6 @@ div .button_paragraphe {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
-    margin-right: 26rem;
 
 }
 
@@ -62,4 +61,13 @@ div .button_paragraphe:hover {
     border-bottom: none;
     background-color: #7451eb;
     transition: 0.3s all;
+}
+
+@media (max-width: 768px) {
+    .paragraphe {
+        font-size: 1rem;
+        width: 88vw;
+        height: 37vh;
+    }
+
 }

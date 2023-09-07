@@ -7,7 +7,7 @@ import Oneproject from './pages/Oneproject';
 import School from "./pages/School";
 import Work from "./pages/Work";
 import Workmore from "./pages/Workmore";
-import Footer from './composants/Footer';
+// import Footer from './composants/Footer';
 import './styles/App.css';
 
 function App() {
@@ -24,8 +24,7 @@ function App() {
         <Route path="/work/http" element={<Workmore />} />
 
       </Routes>
-      <Footer />
-    </div>
+      </div>
   );
 }
 

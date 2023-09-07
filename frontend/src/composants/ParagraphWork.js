@@ -9,7 +9,7 @@ export default function ParagraphWork(props) {
     return (
         <div className='paragraphe-comp'>
             <div className="text">
-                <p id='paragraphes'>
+                <p id='paragraphe'>
                     {props.Paragraph}
                 </p>
             </div>

@@ -6,21 +6,7 @@
     margin-left: 12rem;
 }
 
-.description {
-    background: black;
-    color: #fff;
-    width: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Inria Serif;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 5px;
-    margin-right: 10px;
-    cursor: pointer;
-}
+
 
 .description.active {
     background: transparent;
@@ -33,11 +19,16 @@
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
+}
+
+.description {
+    cursor: pointer;
 }
 
 .active-description {
-    display: block;
+    opacity: 1;
+    transition: 0.5s all;
     width: 72rem;
     text-align: justify;
     font-family: Inria Serif;
@@ -76,4 +67,52 @@
     color: white;
     font-size: 20px;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    .description-zone {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 85%;
+    }
+
+    .description {
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+        font-size: 2.5vw;
+    }
+
+    .active-description {
+        width: 72vw;
+    }
+
+    .link {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1243px) and (min-width: 800px) {
+    .description-zone {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 85%;
+    }
+
+    .description {
+        margin-bottom: 0.5vh;
+    }
+
+    .active-description {
+        width: 80vw;
+    }
+
+    .link {
+        left: 0;
+    }
+
 }

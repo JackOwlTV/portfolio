@@ -1,7 +1,16 @@
 .gallery {
     text-align: center;
-    margin: 60px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1240px;
+}
+
+@media (max-width: 1243px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
 }

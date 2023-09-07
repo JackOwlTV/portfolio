@@ -1,6 +1,6 @@
 .footer {
     background: black;
-    margin-top: 6.5rem;
+    margin-top: 6.5vh;
 }
 
 .footer-logo {
@@ -41,4 +41,26 @@ a {
 
 .svg {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .telephone,
+    .mail {
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1243px) {
+
+    .telephone,
+    .mail {
+        width: 20%;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
 }

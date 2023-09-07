@@ -15,8 +15,13 @@ div text {
     flex-shrink: 0;
 
 }
+.paragraphe-comp {
+	display: grid;
+	grid-auto-columns: min-content;
+	margin: auto;
+}
 
-#paragraphe {
+/* #paragraphe {
     color: #000;
     text-align: justify;
     font-family: Inria Serif;
@@ -24,7 +29,7 @@ div text {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
+} */
 
 #button {
     display: flex;
@@ -60,9 +65,9 @@ div .button-paragraphe {
 div .button-paragraphe:hover {
     border-bottom: none;
 
-    background-color: transparent;
+    background-color: #0077B5;
 
-    color: #000;
+    color: #FEFEFE;
 
     transition: 0.3s all;
 }
