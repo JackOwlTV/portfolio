@@ -47,8 +47,8 @@ export const projectList = [
 
     },
     {
-        "id": "bard",
-        "title": "Test 3",
+        "id": "domainebard",
+        "title": "Domaine Bard",
         "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
         "pictures": [
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -59,8 +59,7 @@ export const projectList = [
         ],
         "description": " de test",
         "link": {
-            "github": "https://github.com/JackOwlTV/Kasa-Immobilier",
-            "website": "https://kasaimmobilier.netlify.app/"
+            "website": "https://domainebard.com/"
         },
         "tags": [
             "HTML",

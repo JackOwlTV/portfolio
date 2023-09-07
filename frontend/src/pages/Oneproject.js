@@ -22,21 +22,6 @@ export default function Oneproject() {
     const [descriptionActive, setDescriptionActive] = useState(0);
     const picturesLengthRef = useRef(project.pictures.length);
 
-
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //       // Calcul de l'indice de l'image suivante
-    //       const nextIndex = (activeBanner + 1) % project.pictures.length;
-    //       setActiveBanner(nextIndex);
-    //     }, 7000); // Change d'image toutes les 5 secondes (5000 millisecondes)
-
-    //     return () => {
-    //       // Nettoie l'intervalle lorsque le composant est démonté
-    //       clearInterval(interval);
-    //     };
-    //   }, [activeBanner]);
-
     useEffect(() => {
         picturesLengthRef.current = project.pictures.length;
       }, [project.pictures.length]);
@@ -59,13 +44,13 @@ export default function Oneproject() {
         <div>
             <div className="project-banner">
                 <div className="link">
-                    <div className='icon-block'>
+                    <div className={`${!project.link.github ? 'hidden' : 'icon-block'}`}>
                         <Link to={project.link.github} >
                             <FontAwesomeIcon icon={faGithub} className='icon-link' />
                         </Link>
                     </div>
 
-                    <div className='icon-block'>
+                    <div className={`${!project.link.website ? 'hidden' : 'icon-block'}`}>
                         <Link to={project.link.website}>
                             <FontAwesomeIcon icon={faLink} className='icon-link' />
                         </Link>
