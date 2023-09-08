@@ -7,7 +7,6 @@ export default function Card(props) {
         <div className='card'>
             <Link to={`/project/${props.id}`}>
                 {" "}
-                <div className='overlay'></div>
                 <img src={props.cover} alt="project" />
                 <span>{props.title}</span>
             </Link>
