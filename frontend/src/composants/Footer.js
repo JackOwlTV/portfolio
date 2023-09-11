@@ -11,11 +11,11 @@ export default function Footer() {
                 <img src={Logo} alt="" />
             </div>
             <div className="contact">
-                <div className="telephone">
+                <div className="contact-link">
                     <FontAwesomeIcon icon={faPhone} className='svg' />
                     <a href="tel:+33627812760">Appeler le numéro</a>
                 </div>
-                <div className="mail">
+                <div className="contact-link">
                     <FontAwesomeIcon icon={faEnvelope} className='svg' />
                     <a href="mailto:contact@dylanvivant.com">Envoyer un e-mail</a>
                 </div>

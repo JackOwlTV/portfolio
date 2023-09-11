@@ -7,11 +7,10 @@
 .title {
     display: flex;
     flex-direction: column;
-    margin-right: 44rem;
     text-align: center;
 }
 
-.school{
+.school {
     margin-right: 0;
 }
 
