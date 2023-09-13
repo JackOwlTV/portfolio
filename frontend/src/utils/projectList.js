@@ -4,11 +4,8 @@ export const projectList = [
         "title": "Kasa Immobilier",
         "cover": "https://i.ibb.co/8P9XdbF/kasacover-80.jpg",
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+            "https://i.ibb.co/RhmJss5/website-3-80.jpg",
+            "https://i.ibb.co/YLGHYHT/website-2-80.jpg"
         ],
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
         "link": {
@@ -47,7 +44,7 @@ export const projectList = [
     {
         "id": "domainebard",
         "title": "Domaine Bard",
-        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+        "cover": "https://i.ibb.co/CJCPZmm/domainebard-80.jpg",
         "pictures": [
             "https://i.ibb.co/jL6z3Dc/website-db-1-80.jpg",
             "https://i.ibb.co/7g9jHwP/website-db-2-80.jpg"
